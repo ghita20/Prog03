@@ -8,7 +8,7 @@ public class tema3_ej2 {
 		do{
 			System.out.print("Introduce el valor de N:");
 			N=teclado.nextInt();
-		}while(N==1 || N==100);
+		}while(N<1 || N>100);
 		int i=1;
 		while(i<=10)
 			System.out.println(N +" x " +i +" = " +N*i++);
