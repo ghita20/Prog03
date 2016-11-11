@@ -18,7 +18,7 @@ public class tema3_ej23 {
 				cero=residuo%10==0?cero+1:cero; //si encuentra un 0 aumenta en 1 cero
 					residuo/=10;
 				}//fin del while
-			}//fin del else
+			}//fin del elses
 				
 			
 		}while(n>=0);
