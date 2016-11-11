@@ -1,5 +1,6 @@
+/*Este programa pide por teclado el nombre y la edad de 10 alumnos y muestra en pantalla el
+número de alumnos que son mayores de edad y el nombre y la edad del mayor.*/
 import java.util.Scanner;
-
 public class tema3_ej22 {
 
 	public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class tema3_ej22 {
 			edad=teclado.nextInt();
 			if(edad>=18)
 				mayores++;
-			if(i==1){
+			if(i==1){//el primer alumno será el que mayor edad tenga
 				edadMayor=edad;
 				nombreMayor=nombre;
 			}
