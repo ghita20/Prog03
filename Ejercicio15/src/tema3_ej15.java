@@ -1,5 +1,5 @@
+//Pide 3 números y los muestra en forma ascendente
 import java.util.Scanner;
-
 public class tema3_ej15 {
 
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class tema3_ej15 {
 		System.out.println("Introduce c: ");
 		c=teclado.nextInt();
 		
-		if(a>b)
+		if(a>b)//hacemos las comprobaciones de cual es el mayor
 			if(a>c){
 				mayor=a;
 				if(b>c){
