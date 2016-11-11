@@ -5,26 +5,27 @@ public class t3_ej7 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner teclado=new Scanner(System.in);
-		int N=0, elMayor=0,elMenor=0,media,cantidad=0,suma=0,r=0;
+		int n,elMayor=0,elMenor=0,suma=0,cantidad=0;
 		do{
-
-			System.out.println("Introduce numero: ");
-			N=teclado.nextInt();
-
-			if(N!=0){
-				suma+=N;
+			System.out.println("Introduce valores: ");
+			n=teclado.nextInt();
+			if(n!=0){ //esta condición es por si introducimos 0 ya no realice las comprobaciones (estropearía la media y el número menor)
 				cantidad++;
-				if(N>elMayor)
-					elMayor=N;
-				if(cantidad==1)
-					elMenor=N;
-				if(N<elMenor)
-					elMenor=N;
+				suma+=n;
+			//si N es mayor que elMayor actualizamos el número Mayor
+			elMayor=n>elMayor?n:elMayor;	
+			
+			if(cantidad==1)//el primer número srá el mas pequeño
+				elMenor=n;
+			else 
+			//luego vamos comprobando si hay alguno mas pequeño que el primero
+			elMenor=n<elMenor?n:elMenor;				
 			}
-		}while(N!=0);
-		System.out.println("Media =" +suma/cantidad);
+		}while(n!=0);
+		
+		System.out.println("La media es: " +suma/cantidad);
 		System.out.println("El mayor es: " +elMayor);
-		System.out.println("El menor es: " +elMenor);
+		System.out.print("El menor es: " +elMenor);
 
 	}
 
