@@ -1,5 +1,5 @@
+//programa que nos dice si un número es perfecto(la suma de sus divisores es el propio numero)
 import java.util.Scanner;
-
 public class tema3_ej09 {
 
 	public static void main(String[] args) {
@@ -9,21 +9,18 @@ public class tema3_ej09 {
 		System.out.print("Introduce N: ");
 		N=teclado.nextInt();
 		
-		if(N==1)
+		if(N==1 || N<=0)//1 y 0 no son perfectos y números negativos tampoco
 			System.out.println("No es perfecto.");
 		else{
 			
 			while(i<N){
-				if(N%i==0)
-					divisores+=i;
+				//si i es divisor de N sumo i a divisores, si no le sumo 0
+				divisores+=N%i==0?i:0;
 				i++;
 			}
-			if(divisores==N)
-				System.out.println("Es perfecto.");
-			else
-				System.out.println("No es perfecto.");
-			
-			
+			//si la suma de los divisores=N es perfecto, si no no 
+			System.out.println(divisores==N?"Es perfecto.":"No es perfecto.");
+
 		}
 	}
 
