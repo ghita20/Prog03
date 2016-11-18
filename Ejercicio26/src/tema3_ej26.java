@@ -1,4 +1,5 @@
-
+//Pide nombre y 6 notas de un alumno y devuelve la media y el nombre del ultimo introducido y la media grupal de todos los introducidos
+// el programa deja de pedir alumnos cuando introducimos FIN como nombre
 import java.util.Scanner;
 public class tema3_ej26 {
 	public static void main(String[] args) {
